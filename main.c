@@ -57,8 +57,7 @@ int main(void)
     SetTargetFPS(60);
 
 
-    //Iterator* MyIterator = IteratorCreate(Listptr);
-    //Iterator* Headiter = MyIterator;
+    
 
 
     while (!WindowShouldClose())    // Detect window close button or ESC key
@@ -109,7 +108,7 @@ int main(void)
 
         ClearBackground(GRAY);
         
-        //DrawCircle(Rootcircle->ParentX, Rootcircle->ParentY, Rootcircle->radius, Rootcircle->color);
+       
         for (int i = 0; i < (Listptr->size); i++) {
             DrawCircle(MyIterator->pCurrentNode->pData->ParentX, MyIterator->pCurrentNode->pData->ParentY, MyIterator->pCurrentNode->pData->radius, MyIterator->pCurrentNode->pData->color);
             IteratorNext(MyIterator);
@@ -145,44 +144,10 @@ int main(void)
     // De-Initialization
     //--------------------------------------------------------------------------------------
         CloseWindow();        // Close window and OpenGL context
-        //--------------------------------------------------------------------------------------
-        //free(MyIterator);
-        //free(Listptr);
-
+       
         return 0;
     
 }
 
 
 
-//Color,Radius,rodlenght,w  x      y
-   //Circles*  mycircle1= CircleCreate(BLUE, 30.0f, 50.0f,45.0f, 960.0f, 540.0f);
-
-/*
-float ParentX = MyIterator->pCurrentNode->pPrev->pData->ParentX + rodLenght;
-float ParentX = MyIterator->pCurrentNode->pPrev->pData->ParentX + rodLenght;
-
-
-
-
-
-
-for (int i = 1; i <= (Listptr->size); i++) {
-
-            if (MyIterator != NULL) {
-                ;
-                MyIterator->pCurrentNode->pData->ParentY = MyIterator->pCurrentNode->pPrev->pData->ParentY + (MyIterator->pCurrentNode->pData->rodLenght) * (cos(t * MyIterator->pCurrentNode->pData->w));
-            }
-
-            IteratorNext(MyIterator);
-        }
-
-
-
-
-
-
-
-
-*/        
-//DrawCircle(mycircle1->ParentX, mycircle1->ParentY, mycircle1->radius, mycircle1->color);
